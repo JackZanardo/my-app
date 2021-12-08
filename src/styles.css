@@ -14,15 +14,23 @@ h2, h3 {
 
 body {
     color: #000;
-    background-color: #EAECEE;
+    background-color: #2C3E50;
     font-family: "Mulish", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     margin: 2em;
 }
 
-input[type="text"], button {
+button {
     color: #000;
     background-color: #D6EAF8;
+}
+
+input[type="text"] {
+    color: #000;
+    background-color: #D6EAF8;
+    border: 2px solid #F4D03F;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
 * {

@@ -6,3 +6,24 @@
 .cheeseDetail {
     margin-bottom: 2px;
 }
+
+.cheeses {
+    padding: 5px;
+}
+
+.cheeseRow {
+    border: 5px solid #F4D03F;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #45B39D;
+    padding: 8px;
+}
+
+
+.selected {
+    background-color: #F4D03F;
+}
+
+ul {
+    list-style-type: none;
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cheese } from '../cheese';
+import { CHEESES } from '../mock-cheeses';
 
 @Component({
   selector: 'app-cheeses',
@@ -7,11 +8,12 @@ import { Cheese } from '../cheese';
   styleUrls: ['./cheeses.component.css']
 })
 export class CheesesComponent implements OnInit {
-  cheese: Cheese = {
-    id: 1,
-    name: 'Gorgonzola',
-    texture: 'soft'
-  };
+  selectedCheese?: Cheese;
+  onSelect(cheese: Cheese): void {
+    this.selectedCheese = cheese;
+  }
+  cheeses = CHEESES;
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application wide styles are applied here */
+
+h1 {
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+    font-size: 250%;
+}
+
+h2, h3 {
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+}
+
+body {
+    color: #000;
+    background-color: #EAECEE;
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    margin: 2em;
+}
+
+input[type="text"], button {
+    color: #000;
+    background-color: #D6EAF8;
+}
+
+* {
+    font-family: "Mulish", sans-serif;
+}

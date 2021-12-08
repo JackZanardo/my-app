@@ -7,16 +7,4 @@
     </li>
 </ul>
 
-
-<div class="cheeseCard" *ngIf="selectedCheese">
-    <h2>{{selectedCheese.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{selectedCheese.id}}</div>
-    <div class="cheeseDetail">
-        <label for="name">Cheese name: </label>
-        <input id="name" [(ngModel)]="selectedCheese.name" placeholder="name" type="text">
-    </div>
-    <div class="cheeseDetail">
-        <label for="texture">Cheese texture: </label>
-        <input id="texture" [(ngModel)]="selectedCheese.texture" placeholder="texture" type="text">
-    </div>
-</div>
+<app-cheese-detail [cheese]="selectedCheese"></app-cheese-detail>

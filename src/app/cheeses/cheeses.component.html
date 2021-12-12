@@ -1,10 +1,10 @@
 
 <h2>My Cheeses:</h2>
 <ul class="cheeses">
-    <li *ngFor="let cheese of cheeses" (click)="onSelect(cheese)" class="cheeseRow" [class.selected]="cheese === selectedCheese">
-        <span>{{cheese.id}}</span>
-        {{cheese.name}}
+    <li *ngFor="let cheese of cheeses">
+        <a class="cheeseRow" routerLink="/detail/{{cheese.id}}">
+            <span>{{cheese.id}}</span>
+            {{cheese.name}}
+        </a>
     </li>
 </ul>
-
-<app-cheese-detail [cheese]="selectedCheese"></app-cheese-detail>

@@ -9,12 +9,15 @@
     margin: 5px;
     background-color: #45B39D;
     padding: 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
 }
 
-
-.selected {
+.cheeseRow:hover {
     background-color: #F4D03F;
 }
+
 
 ul {
     list-style-type: none;

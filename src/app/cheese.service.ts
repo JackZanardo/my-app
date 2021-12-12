@@ -14,5 +14,12 @@ export class CheeseService {
     this.messageService.add('CheeseService: fetched cheeses');
     return cheeses;
   }
+
+  getCheese(id: Number): Observable<Cheese> {
+    const cheese = CHEESES.find(c => c.id === id)!;
+    this.messageService.add(`CheeseService: fetched cheese id=${id}`);
+    return of(cheese);
+  }
+
   constructor(private messageService: MessageService) { }
 }

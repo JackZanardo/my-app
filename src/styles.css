@@ -21,8 +21,19 @@ body {
 }
 
 button {
-    color: #000;
-    background-color: #D6EAF8;
+    background-color: #e0e0e0;
+    color: black;
+    border: 3px solid #45B39D;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 4px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #45B39D;
+    color: black;
 }
 
 input[type="text"] {
@@ -35,4 +46,25 @@ input[type="text"] {
 
 * {
     font-family: "Mulish", sans-serif;
+}
+
+.nav {
+    margin-bottom: 4px;
+}
+
+.nav-link:link, .nav-link:visited {
+    background-color: #e0e0e0;
+    color: black;
+    border: 3px solid #45B39D;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.nav-link:hover, .nav-link:active {
+    background-color: #45B39D;
+    color: black;
 }

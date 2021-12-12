@@ -9,11 +9,6 @@ import { MessageService } from '../message.service';
   styleUrls: ['./cheeses.component.css']
 })
 export class CheesesComponent implements OnInit {
-  selectedCheese?: Cheese;
-  onSelect(cheese: Cheese): void {
-    this.selectedCheese = cheese;
-    this.messageService.add(`CheeseComponent: Selected Cheese id=${cheese.id}`)
-  }
   cheeses: Cheese[] = [];
 
   constructor(private cheeseService: CheeseService, private messageService: MessageService) { }
